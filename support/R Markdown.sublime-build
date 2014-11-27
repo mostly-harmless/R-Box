@@ -2,6 +2,6 @@
     "selector": "text.html.markdown.rmarkdown",
     "working_dir": "${project_path:${folder}}",
     // "cmd": [ "Rscript -e \"library(knitr); knit('$file', output=file.path('$file_path', '$file_base_name.md'))\"" ],
-    "cmd": [ "Rscript -e \"library(rmarkdown); rmarkdown::render('$file', html_document())\"" ],
+    "cmd": [ "Rscript -e \"library(rmarkdown); rmarkdown::render('$file', \"html_document\")\"" ],
     "shell": true
 }
